@@ -9,7 +9,7 @@
 </head>
 <body>
     <div class="main-content">
-        <div class="window active" style="max-width: 412px">
+        <div id="main" class="window active" style="max-width: 412px">
             <div class="title-bar">
             <div class="title-bar-text">Home</div>
             <div class="title-bar-controls">
@@ -35,19 +35,18 @@
                   width: 100%;
                   padding-top: 2%;
                   display: flex;
-                  gap: 4px;
+                  gap: 24px;
                   justify-content: center;
                   align-items: center;">
                     <button onclick="window.location.href = 'src/musicnprojects.html';">My Projects</button>
                     <button onclick="window.location.href = 'src/socials.html';">Socials</button>
-                    <button disabled>FAQ</button>
-                    <button disabled>Credits</button>
-                    
+                    <button onclick="window.location.href = 'src/faq.html';">FAQ</button>
+                    <button onclick="window.location.href = 'src/credits.html';">Credits</button>
                 </div>
-                <p>the site is kinda unfinished for now...</p>
             </div>
         </div>
     </div>
         <script src="src/main.js"></script>
+        <script src="src/mobilesupport.js"></script>
 </body>
 </html>

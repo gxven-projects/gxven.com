@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="main-content">
-        <div class="window active" style="max-width: 640px; max-height: 480px;">
+    <div  class="main-content">
+        <div id="main" class="window active" style="max-width: 640px; max-height: 480px;">
             <div class="title-bar">
             <div class="title-bar-text">My Projects</div>
             <div class="title-bar-controls">
@@ -96,9 +96,35 @@
                         </div>
                     </article>
                     <article role="tabpanel" id="tab-B" hidden style="min-width: 490px; max-width: 490px; min-height: 300px; max-height: 300px">
-                      <p>COMING SOON!</p>
-                      <p>anyway heres a leaked footage of squalish himself being lazy and probably eeping.</p>
-                      <img src="../assets/images/squish_eep.png" width="490" height="220">
+                        <div class="has-scrollbar" style="width: 500px; height: 300px; overflow: auto">
+                            <div class="div-music">
+                                <div class="div-music-art-and-info">
+                                    <img src="https://tr.rbxcdn.com/054263d23bc23a4b6eb9710667ed5d19/150/150/Image/Webp" width="128" height="128">
+                                    <div class="div-music-info">
+                                        <div class="div-music-info-name">
+                                            <p><strong>Custom ROM Simulator</strong></p>
+                                        </div>
+                                        <div class="div-music-info-artist">
+                                            <p>Every platform is supported (except for VR)</p>
+                                        </div>
+                                        <div class="div-music-info-description">
+                                            <p>
+                                                
+                                            </p>
+                                            <div class="has-scrollbar" style="width: 340px; height: 96px; overflow: auto">
+                                                Got a bit bored and decided to make a silly simulator about custom romming phones cause why not
+                                            </div>
+                                            <p>
+                                                
+                                            </p>
+                                        </div>
+                                        <div class="div-music-info-platforms">
+                                            <a href="https://www.roblox.com/games/12059925119/Custom-ROM-Simulator">Play now on Roblox</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                       </fieldset>
                     </article>
                     <article role="tabpanel" id="tab-C" hidden style="min-width: 490px; max-width: 490px; min-height: 300px; max-height: 300px">
@@ -121,5 +147,6 @@
         </div>
     </div>
         <script src="main.js"></script>
+        <script src="mobilesupport.js"></script>
 </body>
 </html>
