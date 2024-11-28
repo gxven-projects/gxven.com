@@ -9,15 +9,10 @@
     <link rel="stylesheet" href="src/style.css">
 </head>
 <body>
-    <div class="main-content">
+    <div id="main-window" class="main-content">
         <div id="main" class="window active" style="max-width: 412px">
             <div class="title-bar">
             <div class="title-bar-text">Home</div>
-            <div class="title-bar-controls">
-                <button aria-label="Minimize"></button>
-                <button aria-label="Maximize"></button>
-                <button aria-label="Close"></button>
-            </div>
             </div>
 
             <div class="window-body has-space">
@@ -34,15 +29,15 @@
                   <div style="
                   margin: auto;
                   width: 100%;
-                  padding-top: 2%;
+                  padding-top: 4px;
                   display: flex;
                   gap: 24px;
                   justify-content: center;
                   align-items: center;">
-                    <button onclick="window.location.href = 'src/musicnprojects.html';">My Projects</button>
-                    <button onclick="window.location.href = 'src/socials.html';">Socials</button>
-                    <button onclick="window.location.href = 'src/faq.html';">FAQ</button>
-                    <button onclick="window.location.href = 'src/credits.html';">Credits</button>
+                    <button onclick="goTo('src/musicnprojects.html');">My Projects</button>
+                    <button onclick="goTo('src/socials.html');">Socials</button>
+                    <button onclick="goTo('src/faq.html');">FAQ</button>
+                    <button onclick="goTo('src/credits.html');">Credits</button>
                 </div>
             </div>
         </div>

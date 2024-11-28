@@ -9,14 +9,12 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div  class="main-content">
+    <div id="main-window" class="main-content">
         <div id="main" class="window active" style="max-width: 640px; max-height: 480px;">
             <div class="title-bar">
             <div class="title-bar-text">My Projects</div>
             <div class="title-bar-controls">
-                <button aria-label="Minimize"></button>
-                <button aria-label="Maximize"></button>
-                <button aria-label="Close"></button>
+                <button aria-label="Close" onclick="goHome();"></button>
             </div>
             </div>
 
@@ -519,7 +517,7 @@
                   padding-top: 2%;
                   display: flex;
                   gap: 4px;">
-                    <button onclick="window.location.href = '../index.html';"><- Back</button>
+                    <button onclick="goHome();"><- Back</button>
                 </div>
 
             </div>
