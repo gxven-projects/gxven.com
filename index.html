@@ -7,7 +7,6 @@
     <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico">
     <link rel="stylesheet" href="https://unpkg.com/7.css">
     <link rel="stylesheet" href="src/style.css">
-    <script src="src/control.js"></script>
     <link rel="preload" as="image" href="./assets/images/bg.png">
 </head>
 <body onload="goTo(0)">
@@ -543,7 +542,7 @@
                                     </div>
                                 </fieldset>
                                 </article>
-                                <article role="tabpanel" id="tab-C" hidden style="min-width: 490px; max-width: 490px; min-height: 300px; max-height: 300px">
+                                <article role="tabpanel" id="tab-C" hidden style="width: 490px; min-height: 300px; height: 300px">
                                     <p>COMING SOON!</p>
                                     <p>anyway heres a leaked footage of squalish himself being lazy and probably eeping.</p>
                                     <img src="./assets/images/squish_eep.png" width="490" height="220" draggable="false">
@@ -564,7 +563,7 @@
                     </div>
 
                     <div id="socials" style="display: none;">
-                        <div id="win3" class="window active" style="max-width: 320px;">
+                        <div id="win3" class="window active" style="min-width: 320px;">
                             <div class="title-bar">
                             <div class="title-bar-text">My Socials</div>
                             <div class="title-bar-controls">
@@ -816,6 +815,8 @@
         </div>
     </main>
     <script src="src/main.js"></script>
+    <script src="src/control.js"></script>
+    <script src="src/draggable-window.js"></script>
     <script src="src/mobilesupport.js"></script>
     <script src="lib/pixi.min.mjs"></script>
 </body>
