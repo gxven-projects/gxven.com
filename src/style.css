@@ -25,7 +25,6 @@ main.background {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    background-position: center;
     image-rendering: pixelated;
     position: fixed;
 }
@@ -38,12 +37,11 @@ main.background {
 
 .main-content {
     margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
+    position: fixed;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-
+    top: 50%;
+    left: 50%;
 }
 
 .div-music-art-and-info {

@@ -27,12 +27,14 @@ function goTo(location) {
 
       // RESET POSITION OF ALL WINDOWS
       const allWindows = document.querySelectorAll('.window');
+      
       allWindows.forEach((windowElement) => {
           windowElement.style.position = 'absolute';
           windowElement.style.top = '50%';
           windowElement.style.left = '50%';
           windowElement.style.transform = 'translate(-50%, -50%)';
       });
+
 
     // HIDE ALL WINDOWS
     for (let i = 0; i < windows.length; i++) {

@@ -3,18 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- embed tags -->
+    <!-- Open Graph meta tags -->
+    <meta property="og:title" content="Squalish" />
+    <meta property="og:description" content="Squalish's site that is about Squalish" />
+    <meta property="og:url" content="https://squalish.github.io/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_US" />
+    <!-- Twitter card meta tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Squalish" />
+    <meta name="twitter:author" content="Squalish" />
+    <meta name="twitter:description" content="Squalish's site that is about Squalish" />
+    <meta name="twitter:image" content="https://squalish.github.io/assets/images/squalish_logo_text.png" />
+
+    <meta name="author" content="Squalish" />
+    <meta name="description" content="Squalish's site that is about Squalish" />
+    <meta name="theme-color" content="#F8C8DC" />
+
     <title>Squalish's Website</title>
     <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico">
     <link rel="stylesheet" href="https://unpkg.com/7.css">
     <link rel="stylesheet" href="src/style.css">
     <link rel="preload" as="image" href="./assets/images/bg.png">
+    <!--<link rel="preload" as="script" href="https://pixijs.download/v7.4.2/pixi.js">-->
 </head>
 <body onload="goTo(0)">
-    <main class="background">
+    <main class="background" id="background">
         <div id="content">
             <div id="main-window" class="main-content">
-                <div id="welcome" style="display: none;">
-                            <div id="win1" class="window active" style="max-width: 412px;">
+            <!-- TODO: I'll probably imploment a better window system for this because for now it is just too basic ig. -->
+                <div class="welcome" id="welcome" style="display: none;">
+                            <div id="win1" class="window glass active" style="max-width: 412px;">
                                 <div class="title-bar">
                                 <div class="title-bar-text">Home</div>
                                 </div>
@@ -47,8 +68,8 @@
                             </div>
                 </div>
 
-                <div id="projects" style="display: none;">
-                            <div id="win2" class="window active" style="max-width: 640px; max-height: 480px;">
+                <div class="projects" id="projects" style="display: none;">
+                            <div id="win2" class="window glass active" style="max-width: 640px; max-height: 480px;">
                             <div class="title-bar">
                             <div class="title-bar-text">My Projects</div>
                             <div class="title-bar-controls">
@@ -84,16 +105,14 @@
                                                                 
                                                             </p>
                                                             <div class="has-scrollbar" style="width: 340px; height: 48px; overflow: auto">
-                                                                keep yourself safe pls :3 (im a bit too lazy to make bandcamp thing for now).
+                                                                keep yourself safe pls :3.
                                                             </div>
                                                             <p>
                                                                 
                                                             </p>
                                                         </div>
                                                         <div class="div-music-info-platforms">
-                                                            <a href="https://www.youtube.com/watch?v=wuyLlASBQEo">YouTube</a>
-                                                            <a href="https://soundcloud.com/squalish/kys">SoundCloud</a>
-                                                            <a href="https://open.spotify.com/track/1Z2ISJ50QIE7GPHeXwrCPo?si=159e02bb13b44d92">Spotify</a>
+                                                            <a href="https://push.fm/fl/95p8yn0e">Listen</a>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -122,10 +141,7 @@
                                                             </p>
                                                         </div>
                                                         <div class="div-music-info-platforms">
-                                                            <a href="https://www.youtube.com/watch?v=6R2zBtcdLD0">YouTube</a>
-                                                            <a href="https://soundcloud.com/squalish/rasterization">SoundCloud</a>
-                                                            <a href="https://open.spotify.com/track/5Vd190kTryfbLIEOqk90eB?si=a01ea6fc467a41a4">Spotify</a>
-                                                            <a href="https://squalish.bandcamp.com/track/rasterization">Bandcamp</a>
+                                                            <a href="https://push.fm/fl/rasterization">Listen</a>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -154,10 +170,7 @@
                                                             </p>
                                                         </div>
                                                         <div class="div-music-info-platforms">
-                                                            <a href="https://www.youtube.com/watch?v=8DSBGXMXQEk">YouTube</a>
-                                                            <a href="https://soundcloud.com/squalish/endless-storage">SoundCloud</a>
-                                                            <a href="https://open.spotify.com/track/0lU7hgpyj2V7Ig53TEr8fD?si=90f8cbbaa88b410d">Spotify</a>
-                                                            <a href="https://squalish.bandcamp.com/track/endless-storage">Bandcamp</a>
+                                                            <a href="https://push.fm/fl/eynqihvw">Listen</a>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -563,8 +576,8 @@
                             </div>
                 </div>
 
-                <div id="socials" style="display: none;">
-                            <div id="win3" class="window active" style="min-width: 320px;">
+                <div class="socials" id="socials" style="display: none;">
+                            <div id="win3" class="window glass active" style="min-width: 320px;">
                                 <div class="title-bar">
                                 <div class="title-bar-text">My Socials</div>
                                 <div class="title-bar-controls">
@@ -718,8 +731,8 @@
                             </div>
                 </div>
 
-                <div id="faq" style="display: none;">
-                            <div id="win4" class="window active" style="min-width: 540px; max-width: 540px; max-height: 480px;">
+                <div class="faq" id="faq" style="display: none;">
+                            <div id="win4" class="window glass active" style="min-width: 540px; max-width: 540px; max-height: 480px;">
                             <div class="title-bar">
                             <div class="title-bar-text">FAQ</div>
                             <div class="title-bar-controls">
@@ -776,8 +789,8 @@
                             </div>
                 </div>
 
-                <div id="credits" style="display: none;">
-                            <div id="win5" class="window active" style="min-width: 540px; max-width: 540px; max-height: 480px;">
+                <div class="credits" id="credits" style="display: none;">
+                            <div id="win5" class="window glass active" style="min-width: 540px; max-width: 540px; max-height: 480px;">
                             <div class="title-bar">
                             <div class="title-bar-text">Credits</div>
                             <div class="title-bar-controls">
@@ -815,10 +828,12 @@
             </div>
         </div>
     </main>
+    <!--<script src="https://pixijs.download/v7.4.2/pixi.js"></script>-->
     <script src="src/main.js"></script>
     <script src="src/control.js"></script>
     <script src="src/draggable-window.js"></script>
     <script src="src/mobilesupport.js"></script>
-    <script src="lib/pixi.min.mjs"></script>
+    <script src="src/background.js"></script>
+   
 </body>
 </html>
