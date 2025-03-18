@@ -34,18 +34,14 @@ if (!isTouchDevice()) {
             const windowWidth = draggableElement.offsetWidth;
             const windowHeight = draggableElement.offsetHeight;
 
-            // Calculate bounds to keep the element inside the viewport
-            const halfViewportWidth = viewportWidth / 2;
-            const halfViewportHeight = viewportHeight / 2;
-
             // Clamping the position values inline
             const clampedX = Math.min(
-                Math.max(newX, -halfViewportWidth + windowWidth / 2),
-                halfViewportWidth - windowWidth / 2
+                Math.max(newX, windowWidth / 2),
+                viewportWidth - windowWidth / 2
             );
             const clampedY = Math.min(
-                Math.max(newY, -halfViewportHeight + windowHeight / 2),
-                halfViewportHeight - windowHeight / 2
+                Math.max(newY, windowHeight / 2),
+                viewportHeight - windowHeight / 2
             );
 
             // Update the element's position
@@ -61,7 +57,7 @@ if (!isTouchDevice()) {
     };
 
     // Initialize draggable functionality for all .window elements
-    const windows = document.querySelectorAll(".window");
+    const windows = document.querySelectorAll(".main-content");
 
     windows.forEach(windowElement => {
         const titleBar = windowElement.querySelector(".title-bar");

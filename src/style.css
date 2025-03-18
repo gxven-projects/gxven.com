@@ -30,16 +30,15 @@ main.background {
 }
 
 .squalish-intro {
-    font-family: Visitor;
     font-size: 70pt;
     text-align: center;
 }
 
 .main-content {
-    margin: 0;
-    position: fixed;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
+    /*margin: 0;*/
+    position: absolute;
+    -ms-transform: translate(75%, 75%);
+    transform: translate(75%, 75%);
     top: 50%;
     left: 50%;
 }
@@ -87,7 +86,6 @@ main.background {
     margin: 2px;
     padding-top: 6px;
     width: 270px;
-    outline: 10px 10px 10px 10px;
     outline-color: black;
     margin-left: -12px;
 }
@@ -140,7 +138,6 @@ p.div-profile-name-and-platform {
     flex: auto;
     width: 0px;
     gap: 0%;
-    align-content: left;
     text-align: right;
 }
 
