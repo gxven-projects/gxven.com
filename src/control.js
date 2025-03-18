@@ -1,4 +1,4 @@
-// GoTo Functions
+// Reworked Window Functions
 const windows = [
   "welcome-window",
   "projects-window",
