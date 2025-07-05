@@ -1,7 +1,6 @@
 :root {
     -webkit-touch-callout: none;
     -webkit-user-select: none;
-    -khtml-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
@@ -83,71 +82,65 @@ main.background {
 }
 
 .div-profile {
-    margin: 2px;
     padding-top: 6px;
-    width: 270px;
+    margin-bottom: 0;
+    width: 200px;
+    height: 34px;
     outline-color: black;
-    margin-left: -12px;
+    display: flex;
+    flex-direction: row;
+    position: relative;
 }
 
 .div-profile-info {
     margin: 0;
     display: flex;
-    flex-direction: column;
-}
-
-img.div-profile-art {
-    margin: 0;
-    margin-left: 12px;
-    margin-top: -3px;
-    image-rendering: pixelated;
-    scale: 100%;
+    flex-direction: row;
 }
 
 .div-profile-art-and-name {
     margin: 0;
-    width: 320px;
+    width: 200px;
     display: flex;
-    gap: 12px;
+    gap: 8px;
     height: 32px;
 }
 
 .div-profile-name {
-    margin: 0;
-    height: 12px;
-    margin-top: -6px;
+    top: 8px;
+    position: absolute;
 }
 
-.div-profile-platform {
-    margin: 0;
-    height: 12px;
-    position: fixed;
-    margin-top: -4px;
-    left: 60%;
+.div-profile-platform-name {
+    position: absolute;
     display: table-cell;
-    padding: 10px;
-    text-align: center;
+    font-weight: bold;
+    text-align: left;
+    top: -6px;
 }
 
 p.div-profile-name-and-platform {
-    text-align: center;
+    text-align: left;
 }
 
 .div-profile-name-and-platform {
     display:flex;
     flex: auto;
-    width: 0px;
-    gap: 0%;
-    text-align: right;
+    width: 0;
+    text-align: left;
+
+}
+
+.div-platform-logo {
+    width: 32px;
+    height: 32px;
 }
 
 a.a-profile {
-    height: 40px;
-    width: 270px;
-    margin-top: -7px;
+    height: 34px;
+    width: 200px;
     background-color: rgba(20, 127, 221, 0);
-    position:absolute;
-    display: flex;
+    position: absolute;
 }
 
 div.main-content {
