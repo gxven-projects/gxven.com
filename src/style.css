@@ -57,7 +57,7 @@ main.background {
 }
 
 .div-music-info-name {
-    margin: 0;
+    margin: -8px 0 0;
     height: 16px;
 }
 
@@ -67,8 +67,9 @@ main.background {
 }
 
 .div-music-info-description {
-    margin: 0;
-    height: 64px;
+    margin: 8px 0 0;
+    height: 68px;
+    color: gray;
 }
 
 .div-music-info-platforms {
@@ -134,6 +135,10 @@ p.div-profile-name-and-platform {
 .div-platform-logo {
     width: 32px;
     height: 32px;
+}
+
+p.visual-artifacts-counter {
+    margin-top: 0;
 }
 
 a.a-profile {
