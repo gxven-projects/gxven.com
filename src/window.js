@@ -1,10 +1,18 @@
 // Reworked Window Functions
+
+// OpenWindow(0); - Home/Welcome-windows
+// OpenWindow(1); - projects/projects-window
+// OpenWindow(2); - social/socials-window
+// OpenWindow(3); - faq/faq-window
+// OpenWindow(4); - credits/credits-window
+// OpenWindow(5); - settings/settings-window
 const windows = [
   "welcome-window",
   "projects-window",
   "socials-window",
   "faq-window",
-  "credits-window"
+  "credits-window",
+  "settings-window"
 ]
 
 const containers = document.querySelectorAll(".main-content");
@@ -83,34 +91,5 @@ const HandleWindowCloseAnimation = ({target}) => {
     target.removeEventListener('animationend', HandleWindowCloseAnimation);
 }
 
-function UpdateTimer() {
-    let timer = CalculateRemainingTime(new Date("08/07/2025 07:00 AM EST"));
-    let text = ""
-    if (timer[0] < 0)
-    {
-        document.getElementById("visual-artifacts-counter").style.display = "none";
-        document.getElementById("visual-artifacts-pre-save").style.display = "none";
-        document.getElementById("visual-artifacts-listen").style.display = "block";
-        return;
-    }
-    for (let i = 1; i < timer.length; i++) {
-        if (timer[i] < 10)
-        {
-            text = text + "0";
-        }
-        text = text + timer[i].toString();
-        if (i !== timer.length - 1) {
-            text += ":";
-        }
-    }
-
-    console.log(text);
-    document.getElementById("visual-artifacts-counter").textContent = text;
-    document.getElementById("visual-artifacts-counter").style.display = "block";
-    document.getElementById("visual-artifacts-pre-save").style.display = "block";
-    document.getElementById("visual-artifacts-listen").style.display = "none";
-}
-
 OpenWindow(0);
 Initialize();
-setInterval(UpdateTimer, 1000)
