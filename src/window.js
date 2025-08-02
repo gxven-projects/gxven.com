@@ -7,6 +7,7 @@
 // OpenWindow(4); - credits/credits-window
 // OpenWindow(5); - settings/settings-window
 // OpenWindow(6); - vscode/vscode-window
+// OpenWindow(7)); - identifiying problem
 const windows = [
   "welcome-window",
   "projects-window",
@@ -14,7 +15,8 @@ const windows = [
   "faq-window",
   "credits-window",
   "settings-window",
-  "vscode-window"
+  "vscode-window",
+  "identifier-window"
 ]
 
 const containers = document.querySelectorAll(".main-content");
