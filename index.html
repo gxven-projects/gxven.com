@@ -42,6 +42,10 @@
                 <img src="assets/app/settings.png" alt="tehee experiment">
                 <div class="app-title">Settings</div>
             </div>
+            <div class="app-icon" onclick="OpenWindow(6)">
+                <img src="assets/app/vscode.png" alt="tehee experiment">
+                <div class="app-title">Visual Studio</div>
+            </div>
         </div>
         <div id="content">
 
@@ -625,7 +629,7 @@
             <div class="main-content" id="settings-window" style="display: none;">
                 <div id="win1" class="window glass active" style="min-width: 450px;">
                     <div class="title-bar">
-                        <div class="title-bar-text">Home</div>
+                        <div class="title-bar-text">Settings</div>
                         <div class="title-bar-controls">
                             <button aria-label="Minimize" onclick="CloseWindow(5);"></button>
                             <button aria-label="Maximize" disabled></button>
@@ -666,13 +670,31 @@
                 </div>
             </div>
 
+            <!-- vscode -->
+            <div class="main-content" id="vscode-window" style="display: none;">
+                <div id="win1" class="window glass active" style="min-width: 850px;">
+                    <div class="title-bar">
+                        <div class="title-bar-text">Visual Studio Code - 2025</div>
+                        <div class="title-bar-controls">
+                            <button aria-label="Minimize" onclick="CloseWindow(6);"></button>
+                            <button aria-label="Maximize" disabled></button>
+                            <button aria-label="Close" onclick="CloseWindow(6);"></button>
+                        </div>
+                    </div>
+
+                    <div class="window-body has-space">
+                        <iframe src="https://github1s.com/gxven-projects/gxven.com/blob/HEAD/index.html"
+                            style="width: 100%; height: 550px; border: none;"></iframe>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </main>
     <!--<script src="https://pixijs.download/v7.4.2/pixi.js"></script>-->
     <script src="src/main.js"></script>
     <!-- <script src="src/timer.js"></script> -->
     <script src="src/window.js"></script>
-    <script src="src/posterizer.js"></script>
     <script src="src/draggable-window.js"></script>
     <script src="src/mobilesupport.js"></script>
 </body>

@@ -6,13 +6,15 @@
 // OpenWindow(3); - faq/faq-window
 // OpenWindow(4); - credits/credits-window
 // OpenWindow(5); - settings/settings-window
+// OpenWindow(6); - vscode/vscode-window
 const windows = [
   "welcome-window",
   "projects-window",
   "socials-window",
   "faq-window",
   "credits-window",
-  "settings-window"
+  "settings-window",
+  "vscode-window"
 ]
 
 const containers = document.querySelectorAll(".main-content");

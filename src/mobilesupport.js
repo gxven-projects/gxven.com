@@ -1,5 +1,5 @@
 function isMobile() {
-    return window.matchMedia("(max-width: 540px)").matches;
+    return window.matchMedia("(max-width: 900px)").matches;
 }
 
 const meow = [
@@ -13,16 +13,8 @@ const meow = [
 function check()
 {
     if (isMobile()) {
-        console.log("You are on a mobile device!");
-        for (let i = 0; i < meow.length; i++) {
-            {
-                const content = document.getElementById("content");
-                content.style.transform  = "scale(0.70, 0.70)";
-                content.style.position = 'absolute';
-                content.style.top = '50%';
-                content.style.left = '50%';
-            }
-        }
+        console.log("Mobile/Tablet detected!");
+        window.location.href = "../mobile.html";
     } else {
         console.log("You are on a desktop device!");
     }
