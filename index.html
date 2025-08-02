@@ -39,12 +39,16 @@
                 <div class="app-title">Home</div>
             </div>
             <div class="app-icon" onclick="OpenWindow(5)">
-                <img src="assets/app/settings.png" alt="tehee experiment">
+                <img src="assets/app/settings.png" alt="Settings">
                 <div class="app-title">Settings</div>
             </div>
             <div class="app-icon" onclick="OpenWindow(6)">
-                <img src="assets/app/vscode.png" alt="tehee experiment">
+                <img src="assets/app/vscode.png" alt="Visual Studio Code">
                 <div class="app-title">Visual Studio</div>
+            </div>
+            <div class="app-icon" onclick="OpenWindow(8), OpenWindow(9)">
+                <img src="assets/win7/Windows Media Player/player.ico" alt="Media player">
+                <div class="app-title">Media player</div>
             </div>
         </div>
         <div id="content">
@@ -597,7 +601,10 @@
                     </div>
 
                     <div class="window-body has-space">
-                        <p style="color: red;"><strong>DISCLAIMER: The people in the credits are helping <a href="https://github.com/Squalish" target="_blank">squalish</a> and is the reason that this site exists! I haven't modified the credits page at all from the origninal</strong></p>
+                        <p style="color: red;"><strong>DISCLAIMER: The people in the credits are helping <a
+                                    href="https://github.com/Squalish" target="_blank">squalish</a> and is the reason
+                                that this site exists! I haven't modified the credits page at all from the
+                                origninal</strong></p>
                         <ul class="tree-view has-container">
                             <li><strong>Special thanks to those people that contributed to this site:</strong></li>
                             <li><strong style="color: gray">Andrew1223</strong> and <strong
@@ -685,7 +692,7 @@
             <div class="main-content" id="identifier-window" style="display: none;">
                 <div id="win1" class="window glass active">
                     <div class="title-bar">
-                        <div class="title-bar-text">Identifing probem</div>
+                        <div class="title-bar-text">Identifing problem</div>
                         <div class="title-bar-controls">
                             <button aria-label="Close" onclick="CloseWindow(7);"></button>
                         </div>
@@ -698,6 +705,55 @@
                 </div>
             </div>
 
+            <!-- TEMP DO NOT FORGET TO DELETE!! -->
+            <div class="main-content" id="mediawarningtemp" style="display: none;">
+                <div id="win1" class="window glass active">
+                    <div class="title-bar">
+                        <div class="title-bar-text">Windows media player</div>
+                        <div class="title-bar-controls">
+                            <button aria-label="Close" onclick="CloseWindow(9);"></button>
+                        </div>
+                    </div>
+
+                    <div class="window-body has-space">
+                        <fieldset style="max-width: 300px;">
+                            <div style="display: flex; align-items: center; gap: 10px;">
+                                <img src="assets/images/info.png" style="width: 48px; height: 48px;">
+                                <p style="color: #5c72c3; font-size: 18px; margin: 0;">This application is still under
+                                    development. Expect unfinished styling!</p>
+                            </div>
+                            <p>Press "Ok" to continiue</p>
+                        </fieldset>
+                        <div style="display: flex; justify-content: flex-end;">
+                            <button onclick="CloseWindow(9)">Ok</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Media player -->
+            <div class="main-content" id="media-player-window" style="display: none;">
+                <div id="win1" class="window glass active">
+                    <div class="title-bar">
+                        <div class="title-bar-text"><img src="assets/win7/Windows Media Player/player.ico"
+                                alt="Windows Media Player"
+                                style="vertical-align: middle; width: 18px; height: 15px; margin-right: 6px;">Windows
+                            Media player</div>
+                        <div class="title-bar-icon"></div>
+                        <div class="title-bar-controls">
+                            <button aria-label="Minimize" onclick="CloseWindow(8);"></button>
+                            <button aria-label="Maximize" disabled></button>
+                            <button aria-label="Close" onclick="CloseWindow(8);"></button>
+                        </div>
+                    </div>
+
+                    <div class="window-body has-space">
+                        <div class="media-taskbar"><img src="assets/win7/Windows Media Player/DXPTaskRingtone_151.ico"
+                                style="transform: rotate(180deg); transform: scaleX(-1); -webkit-transform: scaleX(-1);"><img
+                                src="assets/win7/Windows Media Player/DXPTaskRingtone_151.ico"></div>
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
     <!--<script src="https://pixijs.download/v7.4.2/pixi.js"></script>-->

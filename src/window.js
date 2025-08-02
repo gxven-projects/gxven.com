@@ -7,7 +7,9 @@
 // OpenWindow(4); - credits/credits-window
 // OpenWindow(5); - settings/settings-window
 // OpenWindow(6); - vscode/vscode-window
-// OpenWindow(7)); - identifiying problem
+// OpenWindow(7)); - identifiying problem/identifier-window
+// OpenWindow(8)); - media player/media-player-window
+// OpenWindow(9)); - media player warning/mediawarningtemp /// CAN BE REUSED FROM SOMETHING ELSE ///
 const windows = [
   "welcome-window",
   "projects-window",
@@ -16,7 +18,9 @@ const windows = [
   "credits-window",
   "settings-window",
   "vscode-window",
-  "identifier-window"
+  "identifier-window",
+  "media-player-window",
+  "mediawarningtemp"
 ]
 
 const containers = document.querySelectorAll(".main-content");
@@ -78,6 +82,8 @@ function OpenWindow(location) {
 
     MoveOrder(currentwindow);
 }
+
+
 
 function CloseWindow(location) {
     let currentwindow = document.getElementById(windows[location]);

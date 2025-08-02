@@ -194,6 +194,11 @@ div.main-content {
     background-color: rgba(60, 60, 60, 0.3);
 }
 
+.media-taskbar {
+    width: 800px;
+    height: 600px;
+}
+
 @keyframes windowopen {
     from {
         opacity: 0;
