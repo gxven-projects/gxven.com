@@ -31,8 +31,17 @@ tabButtons.forEach((tabButton) =>
 // Tabs > Tabs Template
 
 
-// Window Body > Window with Tabs
+// Loading screen script by chatgpt
 
+window.addEventListener('load', () => {
+  // Hide loading screen
+  const loadingScreen = document.getElementById('loading-screen');
+  loadingScreen.style.display = 'none';
+
+  // Show website content
+  const content = document.getElementById('content');
+  content.style.display = 'block';
+});
 
 
 // Copy code

@@ -31,6 +31,20 @@
 </head>
 
 <body>
+<div id="loading-screen" style="
+  position: fixed; 
+  top: 0; left: 0; 
+  width: 100%; height: 100%; 
+  background: #121212; 
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  color: white; 
+  font-size: 24px; 
+  z-index: 9999;
+">
+  Loading...
+</div>
     <main class="background" id="background">
         <!-- apps -->
         <div class="apps">
@@ -51,7 +65,7 @@
                 <div class="app-title">Media player</div>
             </div>
         </div>
-        <div id="content">
+        <div id="content" style="display:none;">
 
             <div class="main-content" id="welcome-window" style="display: none;">
                 <div id="win1" class="window glass active" style="max-width: 412px;">
